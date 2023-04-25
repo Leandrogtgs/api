@@ -4,7 +4,7 @@ import jwt
 from datetime import datetime, timedelta
 from functools import wraps
 
-
+# comentario
 # definindo solicitacão de token para rotas
 
 def token_obrigatorio(f):
