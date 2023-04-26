@@ -3,6 +3,7 @@ from estrutura_banco_de_dados import Autor, Postagem, api, db
 import jwt
 from datetime import datetime, timedelta
 from functools import wraps
+import os
 
 # comentario
 # definindo solicitacão de token para rotas
@@ -282,4 +283,5 @@ def excluir_autor(autor, id_autor):
 
 # rodando/inicializando a api
 
-api.run(port=5000, host='localhost', debug=True)
+if __name__ == '__main__':
+    api.run(degub=True, port=os.getenv('PORT', defalt=5000))

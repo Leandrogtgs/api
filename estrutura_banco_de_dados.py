@@ -9,7 +9,7 @@ api = Flask(__name__)
 
 # configurando api/banco de dados
 
-api.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
+api.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:EWGR4FfnnzRcJpEFMmHx@containers-us-west-50.railway.app:6270/railway'
 
 api.config['SECRET_KEY'] = 'SENHASECRETA123'
 
